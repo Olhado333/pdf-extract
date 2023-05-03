@@ -20,3 +20,9 @@ name = "fuzz_extract_text_from_mem"
 path = "fuzz_targets/extract_text_from_mem.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "fuzz_extract_text"
+path = "fuzz_targets/extract_text.rs"
+test = false
+doc = false

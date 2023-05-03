@@ -1,0 +1,5 @@
+project: pdf-extract
+target: extract_text
+duration: 600
+cmds:
+    - cmd: /fuzzers/fuzz_extract_text

@@ -60,6 +60,7 @@ jobs:
       matrix:
         mayhemfile:
           - mayhem/extract_text_from_mem.mayhemfile
+          - mayhem/extract_text.mayhemfile
 
     steps:
       - uses: actions/checkout@v3
