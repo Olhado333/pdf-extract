@@ -1,0 +1,22 @@
+[package]
+name = "fuzz_pdf-extract"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+pdf-extract = { path = ".." }
+libfuzzer-sys = "0.4.0"
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "fuzz_extract_text_from_mem"
+path = "fuzz_targets/extract_text_from_mem.rs"
+test = false
+doc = false
